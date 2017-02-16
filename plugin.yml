@@ -1,0 +1,28 @@
+main: ${project.groupId}.${project.name}
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+authors: [TheComputerGeek2]
+depend: [MassiveCore]
+load: startup
+permissions:
+# -------------------------------------------- #
+# THE REAL NODES
+# -------------------------------------------- #
+  massiveeditortesting.basecommand: {description: use the ${project.name} base command, default: false}
+  massiveeditortesting.config: {description: edit config, default: false}
+# -------------------------------------------- #
+# STAR NOTATION
+# -------------------------------------------- #
+  massiveeditortesting.*:
+    default: false
+    children:
+      massiveeditortesting.basecommand: true
+      massiveeditortesting.config: true
+# -------------------------------------------- #
+# KITS
+# -------------------------------------------- #
+  massiveeditortesting.kit.op:
+    default: op
+    children:
+      massiveeditortesting.*: true
