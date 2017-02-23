@@ -21,6 +21,7 @@ public class CmdEt extends MassiveCommand
 	// -------------------------------------------- //
 	
 	public CmdEtConfig cmdEtConfig = new CmdEtConfig();
+	public CmdEtBackString cmdEtBackString = new CmdEtBackString();
 	
 	// -------------------------------------------- //
 	// CONSTRUCT
@@ -30,6 +31,7 @@ public class CmdEt extends MassiveCommand
 	{
 		// Children
 		this.addChild(this.cmdEtConfig);
+		this.addChild(this.cmdEtBackString);
 		
 		// Requirements
 		this.addRequirements(RequirementHasPerm.get(Perm.BASECOMMAND));

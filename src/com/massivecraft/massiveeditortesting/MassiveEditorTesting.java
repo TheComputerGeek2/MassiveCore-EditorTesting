@@ -2,6 +2,7 @@ package com.massivecraft.massiveeditortesting;
 
 import com.massivecraft.massivecore.MassivePlugin;
 import com.massivecraft.massiveeditortesting.cmd.CmdEt;
+import com.massivecraft.massiveeditortesting.entity.CollTestBackString;
 import com.massivecraft.massiveeditortesting.entity.MConfColl;
 
 public class MassiveEditorTesting extends MassivePlugin
@@ -21,10 +22,12 @@ public class MassiveEditorTesting extends MassivePlugin
 	@Override
 	public void onEnableInner()
 	{
+		MassiveEditorTesting.i = this;
 		// Active
 		this.activate(
 			// Coll
 			MConfColl.class,
+			CollTestBackString.class,
 			
 			// Command
 			CmdEt.class
