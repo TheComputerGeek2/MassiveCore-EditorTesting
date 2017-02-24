@@ -25,6 +25,8 @@ public class MConf extends Entity<MConf>
 	// Aliases
 	public List<String> aliasesEt = MUtil.list("et", "massiveeditortest");
 	public List<String> aliasesEtConfig = MUtil.list("config");
+	public List<String> aliasesEtBackString = MUtil.list("backstring");
+	public List<String> aliasesEtNestedLists = MUtil.list("nestedlists");
 	
 	// Test Maps
 	public Map<String, String> mapStringToString = MUtil.map(

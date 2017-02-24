@@ -1,10 +1,12 @@
 package com.massivecraft.massiveeditortesting.entity;
 
+import com.massivecraft.massivecore.command.editor.annotation.EditorName;
 import com.massivecraft.massivecore.store.Entity;
 import com.massivecraft.massivecore.util.MUtil;
 
 import java.util.List;
 
+@EditorName("nestedlists")
 public class NestedLists extends Entity<NestedLists>
 {
 	// -------------------------------------------- //
