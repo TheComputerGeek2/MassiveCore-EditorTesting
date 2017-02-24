@@ -4,6 +4,7 @@ import com.massivecraft.massivecore.MassivePlugin;
 import com.massivecraft.massiveeditortesting.cmd.CmdEt;
 import com.massivecraft.massiveeditortesting.entity.CollTestBackString;
 import com.massivecraft.massiveeditortesting.entity.MConfColl;
+import com.massivecraft.massiveeditortesting.entity.NestedListsColl;
 
 public class MassiveEditorTesting extends MassivePlugin
 {
@@ -28,6 +29,7 @@ public class MassiveEditorTesting extends MassivePlugin
 			// Coll
 			MConfColl.class,
 			CollTestBackString.class,
+			NestedListsColl.class,
 			
 			// Command
 			CmdEt.class

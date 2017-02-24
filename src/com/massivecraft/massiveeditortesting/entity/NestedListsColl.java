@@ -3,14 +3,14 @@ package com.massivecraft.massiveeditortesting.entity;
 import com.massivecraft.massivecore.MassiveCore;
 import com.massivecraft.massivecore.store.Coll;
 
-public class CollTestBackString extends Coll<TestBackString>
+public class NestedListsColl extends Coll<NestedLists>
 {
 	// -------------------------------------------- //
 	// INSTANCE & CONSTRUCT
 	// -------------------------------------------- //
 	
-	private static transient CollTestBackString i = new CollTestBackString();
-	public static CollTestBackString get() { return i; }
+	private static NestedListsColl i = new NestedListsColl();
+	public static NestedListsColl get() { return i; }
 
 	// -------------------------------------------- //
 	// STACK TRACEABILITY
@@ -31,7 +31,7 @@ public class CollTestBackString extends Coll<TestBackString>
 	{
 		super.setActive(active);
 		if ( ! active) return;
-		TestBackString.i = this.get(MassiveCore.INSTANCE, true);
+		NestedLists.i = this.get(MassiveCore.INSTANCE, true);
 	}
 	
 }
