@@ -23,6 +23,7 @@ public class CmdEt extends MassiveCommand
 	public CmdEtConfig cmdEtConfig = new CmdEtConfig();
 	public CmdEtBackString cmdEtBackString = new CmdEtBackString();
 	public CmdEtNestedLists cmdEtNestedLists = new CmdEtNestedLists();
+	public CmdEtLinkedMap cmdEtLinkedMap = new CmdEtLinkedMap();
 	
 	// -------------------------------------------- //
 	// CONSTRUCT
@@ -34,6 +35,7 @@ public class CmdEt extends MassiveCommand
 		this.addChild(this.cmdEtConfig);
 		this.addChild(this.cmdEtBackString);
 		this.addChild(this.cmdEtNestedLists);
+		this.addChild(this.cmdEtLinkedMap);
 		
 		// Requirements
 		this.addRequirements(RequirementHasPerm.get(Perm.BASECOMMAND));
