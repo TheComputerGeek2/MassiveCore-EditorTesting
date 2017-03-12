@@ -36,6 +36,6 @@ public class TestBackString extends Entity<TestBackString>
 		new BackstringEnumSet<Material>(Material.class)
 	);
 	
-	public ExceptionSetEnum<Material> materialExceptionSetEnum = new ExceptionSetEnum<Material>(Material.class, false);
+	public ExceptionSetEnum<BackstringEnumSet<Material>> materialExceptionSetEnum = new ExceptionSetEnum<BackstringEnumSet<Material>>(new BackstringEnumSet<Material>(Material.class), false);
 	
 }
